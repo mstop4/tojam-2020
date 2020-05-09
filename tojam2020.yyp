@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "a5f466b6-e032-4a25-af2e-7744d813d210",
+            "Value": {
+                "id": "1017b48f-7f44-4654-a6e8-bae9be9e7dbb",
+                "resourcePath": "scripts\/open_leaf_node\/open_leaf_node.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "2f2bbab6-9b03-4826-9a63-488082492bde",
@@ -282,7 +290,8 @@
     "script_order": [
         "6e84cee0-e994-4692-a11a-d21a5a086970",
         "8dd5e8fa-125c-4ca7-bf8a-4b2052d73309",
-        "b42db975-b4f1-4942-800a-b82d8ee6a029"
+        "b42db975-b4f1-4942-800a-b82d8ee6a029",
+        "a5f466b6-e032-4a25-af2e-7744d813d210"
     ],
     "tutorial": ""
 }

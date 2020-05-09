@@ -7,12 +7,15 @@
 tree = ds_map_create();
 build_level(tree, false);
 
-current_room = tree;
-current_doors = [];
+address = "";
 door_pool = [];
 
 for (var i=0; i<MAX_CHILDREN; i++) {
 	door_pool[i] = instance_create_layer(32 + i*96, 32, "Instances", obj_door);
 }
 
-switch_room(tree);
+parent_door = instance_create_layer(64, 128, "Instances", obj_door);
+parent_door.value = 0;
+parent_door.is_parent_door = true;
+
+switch_room(tree, false);

@@ -69,6 +69,20 @@
             "value": "-1",
             "varName": "room_index",
             "varType": 1
+        },
+        {
+            "id": "f80587da-f18d-4e33-947a-083e31dc7710",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "is_parent_door",
+            "varType": 3
         }
     ],
     "solid": false,
