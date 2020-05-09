@@ -1,6 +1,4 @@
-//@arg tree
-
-var _tree = argument[0];
+var _tree = ds_map_create();
 
 var _node_stack = ds_stack_create();
 var _depth_stack = ds_stack_create();
@@ -58,10 +56,4 @@ ds_stack_destroy(_node_stack);
 ds_stack_destroy(_depth_stack);
 ds_list_destroy(_value_bag);
 
-if (argument[1]) {
-	var _test = json_encode(tree);
-	var _test_path = get_save_filename("", "test.json");
-	var _file = file_text_open_write(_test_path);
-	file_text_write_string(_file, _test);
-	file_text_close(_file);
-}
+return _tree;

@@ -1,13 +1,13 @@
 #macro MIN_CHILDREN 2
 #macro MAX_CHILDREN 4
-#macro MAX_DEPTH 3
+#macro MAX_DEPTH 5
 #macro MAX_NODES 1024
 
-// Create tree and root node
-tree = ds_map_create();
-build_level(tree, false);
+tree = build_level();
 
-address = "";
+cur_address = "";
+solution_address = build_solution(tree);
+hint_address = string_repeat("?", string_length(solution_address));
 door_pool = [];
 
 for (var i=0; i<MAX_CHILDREN; i++) {

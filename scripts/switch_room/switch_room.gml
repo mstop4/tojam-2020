@@ -23,10 +23,11 @@ for (var i=0; i<_len; i++) {
 	instance_activate_object(door_pool[i]);
 	door_pool[i].room_index = _current_doors[i];
 	door_pool[i].value = door_pool[i].room_index[? "value"];
+	door_pool[i].image_index = !ds_map_exists(door_pool[i].room_index, "children") ? 1 : 0;
 }
 
 if (_to_parent) {
-	address = string_delete(address, string_length(address), 1);
+	cur_address = string_delete(cur_address, string_length(cur_address), 1);
 } else {
-	address += string(_room_map[? "value"]);
+	cur_address += string(_room_map[? "value"]);
 }
