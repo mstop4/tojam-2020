@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "45ab3b54-c88f-42d1-af14-0c1f7a1b5022",
+            "Value": {
+                "id": "8fe8bbf1-a21d-4ed3-9624-4da5d1e21782",
+                "resourcePath": "sprites\/spr_door\/spr_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "55699804-6f14-460a-9c7e-083dd933c14a",
             "Value": {
                 "id": "bd41804c-1f2b-4c23-b838-9f9c8675eacc",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "b42db975-b4f1-4942-800a-b82d8ee6a029",
+            "Value": {
+                "id": "b5dc3838-37cb-4557-a6ac-3a2197500438",
+                "resourcePath": "scripts\/switch_room\/switch_room.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b4488c73-6b80-413c-b7d2-ad759ef79f9f",
             "Value": {
                 "id": "e5d56551-2250-4b57-8766-d3e21f2dc02e",
@@ -265,7 +281,8 @@
     ],
     "script_order": [
         "6e84cee0-e994-4692-a11a-d21a5a086970",
-        "8dd5e8fa-125c-4ca7-bf8a-4b2052d73309"
+        "8dd5e8fa-125c-4ca7-bf8a-4b2052d73309",
+        "b42db975-b4f1-4942-800a-b82d8ee6a029"
     ],
     "tutorial": ""
 }

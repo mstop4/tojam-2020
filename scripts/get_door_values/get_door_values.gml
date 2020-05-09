@@ -1,3 +1,5 @@
+//@arg room
+
 var _room = argument[0];
 
 var _values = [];
@@ -8,7 +10,7 @@ if (ds_map_exists(_room, "children")) {
 	
 	for (var i=0; i<_len; i++) {
 		var _child = _children[| i];
-		_values[i] = _child[? "value"];
+		_values[i] = _child;
 	}
 }
 

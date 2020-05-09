@@ -1,0 +1,1 @@
+show_message_async("Go to room " + string(room_index));

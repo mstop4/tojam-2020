@@ -5,13 +5,14 @@
 
 // Create tree and root node
 tree = ds_map_create();
-build_level(tree);
+build_level(tree, false);
 
 current_room = tree;
-current_doors = get_door_values(current_room);
-var _len = array_length_1d(current_doors);
+current_doors = [];
+door_pool = [];
 
-for (var i=0; i<_len; i++) {
-	var _door = instance_create_layer(32 + i*96, 32, "Instances", obj_door);
-	_door.value = current_doors[i];
+for (var i=0; i<MAX_CHILDREN; i++) {
+	door_pool[i] = instance_create_layer(32 + i*96, 32, "Instances", obj_door);
 }
+
+switch_room(tree);
