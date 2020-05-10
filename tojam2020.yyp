@@ -87,6 +87,22 @@
             }
         },
         {
+            "Key": "5664d549-76d6-4a52-b789-5743f54bfcd8",
+            "Value": {
+                "id": "744e499d-fbaa-4c4f-8454-c747bedd6677",
+                "resourcePath": "sprites\\spr_floor\\spr_floor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "59886c00-19f7-4380-8981-110dde3093e4",
+            "Value": {
+                "id": "6d956357-bc22-4e9c-9892-bbc244bf9586",
+                "resourcePath": "sprites\\spr_symbols2\\spr_symbols2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c4b03c9-9a10-4b07-b7a3-2ef7cd9c1d04",
             "Value": {
                 "id": "4bca1847-09af-41c3-a85a-7592627a0aea",
@@ -191,6 +207,14 @@
             }
         },
         {
+            "Key": "917e482f-dfec-4147-bb55-6bf572c4e7e6",
+            "Value": {
+                "id": "0a084ce1-b2b6-468c-befe-51b73099c532",
+                "resourcePath": "scripts\\get_door_spacing\\get_door_spacing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
             "Value": {
                 "id": "a882ff53-e611-425d-a485-dd45f91b9b36",
@@ -212,6 +236,14 @@
                 "id": "c2c98e87-9c0a-456f-b8ba-b1ac66a7b35b",
                 "resourcePath": "options\/amazonfire\/options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a48f1543-a5d0-4a67-a30d-6492cf431e4f",
+            "Value": {
+                "id": "26c79de8-daba-4c9e-b4f4-8c86a952c0da",
+                "resourcePath": "sprites\\spr_hint\\spr_hint.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -303,6 +335,22 @@
             }
         },
         {
+            "Key": "d52cb30c-3cfe-4246-92b0-06870f0578fa",
+            "Value": {
+                "id": "d683b81e-c5bc-4de1-ae89-43cf617e3a1b",
+                "resourcePath": "sprites\\spr_parent_door\\spr_parent_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e16a312c-bd27-4dc5-bcf1-49604a7d6c65",
+            "Value": {
+                "id": "aece066d-957b-4b5f-b0d7-de915491a704",
+                "resourcePath": "sprites\\spr_symbols\\spr_symbols.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "56049060-b855-4b4a-94fc-48ac68117c15",
@@ -360,7 +408,8 @@
         "8dd5e8fa-125c-4ca7-bf8a-4b2052d73309",
         "b42db975-b4f1-4942-800a-b82d8ee6a029",
         "a5f466b6-e032-4a25-af2e-7744d813d210",
-        "c78b9ed4-d57e-406d-98b2-3cb467cd1d99"
+        "c78b9ed4-d57e-406d-98b2-3cb467cd1d99",
+        "917e482f-dfec-4147-bb55-6bf572c4e7e6"
     ],
     "tutorial": ""
 }

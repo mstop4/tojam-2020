@@ -8,16 +8,16 @@
 
 randomize();
 init_enums();
+display_set_gui_maximise(4,4);
 
 node_list = ds_list_create();
 tree = build_level();
 
 cur_address = "";
-cur_address_display = "";
 solution_address = build_solution(tree);
 
 // Hints
-hint_guy = instance_create_layer(480, 32, "Instances", obj_hint);
+hint_guy = instance_create_layer(240, 112, "Hint", obj_hint);
 
 add_hints(node_list, solution_address);
 
@@ -25,14 +25,14 @@ add_hints(node_list, solution_address);
 door_pool = [];
 
 for (var i=0; i<MAX_CHILDREN; i++) {
-	door_pool[i] = instance_create_layer(32 + i*96, 32, "Instances", obj_door);
+	door_pool[i] = instance_create_layer(16 + i*48, 112, "Doors", obj_door);
 }
 
-parent_door = instance_create_layer(64, 128, "Instances", obj_door);
+parent_door = instance_create_layer(room_width/2, 216, "Parent", obj_door);
+parent_door.sprite_index = spr_parent_door;
+parent_door.image_alpha = 0.25;
 parent_door.value = 0;
 parent_door.is_parent_door = true;
-
-
 
 ds_list_destroy(node_list);
 

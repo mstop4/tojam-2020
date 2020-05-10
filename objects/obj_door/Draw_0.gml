@@ -1,6 +1,6 @@
-draw_set_colour(c_white);
-draw_set_halign(fa_center);
-draw_set_valign(fa_center);
-
 draw_self();
-draw_text(x+32, y+32, string(value));
+
+if (!is_parent_door) {
+	if (image_index == 0) draw_sprite(spr_symbols,value,x,y-48);
+	else draw_sprite(spr_symbols,value,x,y-16);
+}

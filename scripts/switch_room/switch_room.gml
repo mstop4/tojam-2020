@@ -23,8 +23,11 @@ if (_room_map[? "parent"] != -1) {
 	parent_door.room_index = _room_map[? "parent"];
 }
 
+var _x_pos = get_door_spacing(_len, 32, 16);
+
 for (var i=0; i<_len; i++) {
 	instance_activate_object(door_pool[i]);
+	door_pool[i].x = _x_pos[i];
 	door_pool[i].active = true;
 	door_pool[i].room_index = _current_doors[i];
 	door_pool[i].value = door_pool[i].room_index[? "value"];
@@ -36,8 +39,6 @@ if (_to_parent) {
 } else {
 	cur_address += string(_room_map[? "value"]);
 }
-
-cur_address_display = string_copy(cur_address, 2, string_length(cur_address)-1);
 
 // Set up hints
 if (_room_map[? "hasHint"]) {
