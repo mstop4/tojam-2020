@@ -1,3 +1,3 @@
-gave_hint = false;
+status = false;
 display = "?";
 room_index = -1;

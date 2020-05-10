@@ -37,8 +37,20 @@ if (_to_parent) {
 if (_room_map[? "hasHint"]) {
 	instance_activate_object(hint_guy);
 	hint_guy.room_index = _room_map;
-	hint_guy.gave_hint = _room_map[? "gaveHint"];
-	hint_guy.display = hint_guy.gave_hint ? _room_map[? "theHint"] : "?";
+	hint_guy.status = _room_map[? "hintStatus"];
+	
+	switch (hint_guy.status) {
+		case hint_status.not_given:
+			hint_guy.display = "?";
+			break;
+		case hint_status.pending:
+			hint_guy.display = "!";
+			break;
+		case hint_status.given:
+			hint_guy.display = _room_map[? "theHint"];
+			break;
+	}
+
 } else {
 	instance_deactivate_object(hint_guy);
 }

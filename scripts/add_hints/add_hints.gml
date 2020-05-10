@@ -6,7 +6,7 @@ ds_list_copy(_node_list, argument[0]);
 ds_list_shuffle(_node_list);
 var _solution_address = argument[1];
 
-var _num_hints = max(string_length(_solution_address) * 3, floor(ds_list_size(_node_list) * HINT_RATIO));
+var _num_hints = max((string_length(_solution_address)-1) * (MAX_CHILDREN-1), floor(ds_list_size(_node_list) * HINT_RATIO));
 show_debug_message(string(_num_hints) + "/" + string(ds_list_size(_node_list)));
 
 for (var i=0; i<_num_hints; i++) {

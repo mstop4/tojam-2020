@@ -1,7 +1,13 @@
 #macro MIN_CHILDREN 2
-#macro MAX_CHILDREN 3
-#macro MAX_DEPTH 3
+#macro MAX_CHILDREN 4
+#macro MAX_DEPTH 4
 #macro HINT_RATIO 0.25
+
+#macro MIN_HINT_TIME 300
+#macro MAX_HINT_TIME 900
+
+randomize();
+init_enums();
 
 node_list = ds_list_create();
 tree = build_level();

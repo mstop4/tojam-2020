@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "7c31297c-4310-4213-b572-ac82fc60700f",
+            "Value": {
+                "id": "a5cca1dd-c9f1-4b4f-aa46-c1d505767f77",
+                "resourcePath": "scripts\/dispatch_hint\/dispatch_hint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "c1ccab09-1965-4bf4-a05e-9ea2134a6738",
@@ -140,6 +148,14 @@
                 "id": "59ac03c4-85f3-4ce3-b417-0be422937b2a",
                 "resourcePath": "views\/8619d81c-3b0e-4eac-8f39-7e9c4b119cfc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "896399b1-e54a-4aed-ab9b-a84891e54d55",
+            "Value": {
+                "id": "648ce62f-5abe-419e-b683-801b560a2aea",
+                "resourcePath": "objects\/obj_hint_dispatch\/obj_hint_dispatch.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "c78b9ed4-d57e-406d-98b2-3cb467cd1d99",
+            "Value": {
+                "id": "a6172356-4ab5-443d-aa67-24250279a49a",
+                "resourcePath": "scripts\/init_enums\/init_enums.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c998e254-5653-46ce-a5f5-f4332eed3f57",
             "Value": {
                 "id": "6802b9d5-6ca6-45ef-a300-451a5556ac64",
@@ -323,10 +347,12 @@
         "6e84cee0-e994-4692-a11a-d21a5a086970",
         "07a8f7c4-a876-4ea2-966f-6706315fd927",
         "c998e254-5653-46ce-a5f5-f4332eed3f57",
+        "7c31297c-4310-4213-b572-ac82fc60700f",
         "72e7836b-831d-4aec-9d89-989b55005c5d",
         "8dd5e8fa-125c-4ca7-bf8a-4b2052d73309",
         "b42db975-b4f1-4942-800a-b82d8ee6a029",
-        "a5f466b6-e032-4a25-af2e-7744d813d210"
+        "a5f466b6-e032-4a25-af2e-7744d813d210",
+        "c78b9ed4-d57e-406d-98b2-3cb467cd1d99"
     ],
     "tutorial": ""
 }

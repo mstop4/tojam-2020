@@ -8,7 +8,7 @@ var _value_bag = ds_list_create();
 _tree[? "id"] = _tree;
 _tree[? "value"] = 0;
 _tree[? "hasHint"] = false;
-_tree[? "gaveHint"] = false;
+_tree[? "hintStatus"] = hint_status.not_given;
 _tree[? "theHint"] = "";
 _tree[? "parent"] = -1;
 var _root_list = ds_list_create();
@@ -36,7 +36,7 @@ while (!ds_stack_empty(_node_stack)) {
 		_new_node[? "id"] = _new_node;
 		_new_node[? "value"] = _value_bag[| 0];
 		_new_node[? "hasHint"] = false;
-		_new_node[? "gaveHint"] = false;
+		_new_node[? "hintStatus"] = hint_status.not_given;
 		_new_node[? "theHint"] = "";
 		_new_node[? "parent"] = _cur_node;
 		ds_list_delete(_value_bag, 0);
@@ -46,11 +46,11 @@ while (!ds_stack_empty(_node_stack)) {
 			ds_map_add_list(_new_node, "children", _children_list);
 			ds_stack_push(_node_stack, _new_node);
 			ds_stack_push(_depth_stack, _cur_depth+1);
+			ds_list_add(node_list, _new_node);
 		}
 		
 		var _cur_node_children = _cur_node[? "children"];
 		_cur_node_children[| i] = _new_node;
-		ds_list_add(node_list, _new_node);
 		ds_list_mark_as_map(_cur_node_children, i);
 	}
 }
