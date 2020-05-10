@@ -20,8 +20,8 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 10,
+            "eventtype": 7,
             "m_owner": "ea5251c8-5d41-488f-91b9-0c6c946c91a9"
         }
     ],
@@ -82,6 +82,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "is_parent_door",
+            "varType": 3
+        },
+        {
+            "id": "244f05ad-a02d-419d-97cf-42dc4cdd8c82",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "active",
             "varType": 3
         }
     ],

@@ -16,7 +16,7 @@ cur_address = "";
 solution_address = build_solution(tree);
 
 // Hints
-hint_guy = instance_create_layer(256, 128, "Instances", obj_hint);
+hint_guy = instance_create_layer(480, 32, "Instances", obj_hint);
 
 add_hints(node_list, solution_address);
 

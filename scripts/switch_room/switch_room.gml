@@ -14,14 +14,18 @@ if (_len == 0) {
 }
 
 // Set up doors
+with (obj_door) active = false;
 instance_deactivate_object(obj_door);
+
 if (_room_map[? "parent"] != -1) {
+	parent_door.active = true;
 	instance_activate_object(parent_door);
 	parent_door.room_index = _room_map[? "parent"];
 }
 
 for (var i=0; i<_len; i++) {
 	instance_activate_object(door_pool[i]);
+	door_pool[i].active = true;
 	door_pool[i].room_index = _current_doors[i];
 	door_pool[i].value = door_pool[i].room_index[? "value"];
 	door_pool[i].image_index = !ds_map_exists(door_pool[i].room_index, "children") ? 1 : 0;
@@ -36,6 +40,7 @@ if (_to_parent) {
 // Set up hints
 if (_room_map[? "hasHint"]) {
 	instance_activate_object(hint_guy);
+	hint_guy.active = true;
 	hint_guy.room_index = _room_map;
 	hint_guy.status = _room_map[? "hintStatus"];
 	
@@ -52,5 +57,6 @@ if (_room_map[? "hasHint"]) {
 	}
 
 } else {
+	hint_guy.active = false;
 	instance_deactivate_object(hint_guy);
 }

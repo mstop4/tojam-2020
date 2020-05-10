@@ -1,0 +1,1 @@
+x -= walk_speed;
