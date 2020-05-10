@@ -13,6 +13,7 @@ node_list = ds_list_create();
 tree = build_level();
 
 cur_address = "";
+cur_address_display = "";
 solution_address = build_solution(tree);
 
 // Hints

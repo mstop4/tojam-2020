@@ -37,6 +37,8 @@ if (_to_parent) {
 	cur_address += string(_room_map[? "value"]);
 }
 
+cur_address_display = string_copy(cur_address, 2, string_length(cur_address)-1);
+
 // Set up hints
 if (_room_map[? "hasHint"]) {
 	instance_activate_object(hint_guy);
