@@ -9,9 +9,7 @@ var _current_doors = get_door_values(_room_map);
 var _len = array_length_1d(_current_doors);
 
 // Check if this is a leaf node
-if (_len == 0) {
-	return open_leaf_node(_room_map[? "value"]);
-}
+if (_len == 0) return;
 
 // Set up doors
 with (obj_door) active = false;
@@ -48,14 +46,17 @@ if (_room_map[? "hasHint"]) {
 	hint_guy.status = _room_map[? "hintStatus"];
 	
 	switch (hint_guy.status) {
-		case hint_status.not_given:
+		case HINT_STATUS.NOT_GIVEN:
 			hint_guy.display = "?";
+			hint_guy.image_index = 0;
 			break;
-		case hint_status.pending:
+		case HINT_STATUS.PENDING:
 			hint_guy.display = "!";
+			hint_guy.image_index = 1;
 			break;
-		case hint_status.given:
+		case HINT_STATUS.GIVEN:
 			hint_guy.display = _room_map[? "theHint"];
+			hint_guy.image_index = 1;
 			break;
 	}
 

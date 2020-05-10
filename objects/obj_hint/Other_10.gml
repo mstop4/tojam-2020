@@ -1,3 +1,3 @@
-if (status == hint_status.not_given) {
+if (status == HINT_STATUS.NOT_GIVEN) {
 	dispatch_hint(room_index);
 }

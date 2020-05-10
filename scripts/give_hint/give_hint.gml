@@ -4,7 +4,7 @@ var _room_map = argument[0];
 var _hint_index = argument[1];
 
 with (obj_tree) {
-	_room_map[? "hintStatus"] = hint_status.given;
+	_room_map[? "hintStatus"] = HINT_STATUS.GIVEN;
 	_room_map[? "theHint"] = hint_list[| _hint_index];
 
 	var _hint_x = real(string_char_at(_room_map[? "theHint"], 1)) - 1;
@@ -14,7 +14,8 @@ with (obj_tree) {
 
 	// Update hint guy if it is in the same room as the revealed hint
 	if (hint_guy.room_index == _room_map) {
-			hint_guy.status = hint_status.given;
+			hint_guy.status = HINT_STATUS.GIVEN;
 			hint_guy.display = _room_map[? "theHint"];
+			hint_guy.image_index = 1;
 	}
 }

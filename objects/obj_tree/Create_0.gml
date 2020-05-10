@@ -15,9 +15,10 @@ tree = build_level();
 
 cur_address = "";
 solution_address = build_solution(tree);
+show_solution = false;
 
 // Hints
-hint_guy = instance_create_layer(240, 112, "Hint", obj_hint);
+hint_guy = instance_create_layer(288, 120, "Hint", obj_hint);
 
 add_hints(node_list, solution_address);
 

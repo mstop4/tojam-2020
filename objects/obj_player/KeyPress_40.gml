@@ -1,3 +1,6 @@
-if (parent_door_target) {
-	with (obj_tree.parent_door) event_user(0);
+if (!input_locked) {
+	input_locked = true;
+	state = PLAYER_STATE.STAND;
+	obj_gui.switch_mode = 1;
+	obj_gui.transition_state = TRANSITION_STATE.IN;
 }

@@ -25,7 +25,17 @@
             "m_owner": "5c4b03c9-9a10-4b07-b7a3-2ef7cd9c1d04"
         },
         {
-            "id": "f51f692f-7030-41d2-9b7e-3aa30a58947a",
+            "id": "292c9626-644f-46fc-a645-40c757f833dd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 32,
+            "eventtype": 9,
+            "m_owner": "5c4b03c9-9a10-4b07-b7a3-2ef7cd9c1d04"
+        },
+        {
+            "id": "a50a908f-ec88-4ea2-b086-5050c93a720a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -35,12 +45,12 @@
             "m_owner": "5c4b03c9-9a10-4b07-b7a3-2ef7cd9c1d04"
         },
         {
-            "id": "292c9626-644f-46fc-a645-40c757f833dd",
+            "id": "8672f17f-4eb7-43ed-ac60-f63c8197f048",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 32,
+            "enumb": 123,
             "eventtype": 9,
             "m_owner": "5c4b03c9-9a10-4b07-b7a3-2ef7cd9c1d04"
         }
@@ -62,34 +72,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "71164fe5-bc9a-4043-997b-907ef1c388dd",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "hint_grid_x",
-            "varType": 0
-        },
-        {
-            "id": "63e2bbef-9a9c-4105-a923-e19c8611ce6b",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "hint_grid_y",
-            "varType": 0
-        }
+        
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",

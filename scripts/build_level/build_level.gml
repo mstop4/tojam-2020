@@ -8,7 +8,7 @@ var _value_bag = ds_list_create();
 _tree[? "id"] = _tree;
 _tree[? "value"] = 0;
 _tree[? "hasHint"] = false;
-_tree[? "hintStatus"] = hint_status.not_given;
+_tree[? "hintStatus"] = HINT_STATUS.NOT_GIVEN;
 _tree[? "theHint"] = "";
 _tree[? "parent"] = -1;
 var _root_list = ds_list_create();
@@ -36,7 +36,7 @@ while (!ds_stack_empty(_node_stack)) {
 		_new_node[? "id"] = _new_node;
 		_new_node[? "value"] = _value_bag[| 0];
 		_new_node[? "hasHint"] = false;
-		_new_node[? "hintStatus"] = hint_status.not_given;
+		_new_node[? "hintStatus"] = HINT_STATUS.NOT_GIVEN;
 		_new_node[? "theHint"] = "";
 		_new_node[? "parent"] = _cur_node;
 		ds_list_delete(_value_bag, 0);

@@ -1,5 +1,23 @@
-enum hint_status {
-	not_given,
-	pending,
-	given
+enum HINT_STATUS {
+	NOT_GIVEN,
+	PENDING,
+	GIVEN
+}
+
+enum TRANSITION_STATE {
+	IDLE,
+	OUT,
+	IN
+}
+
+enum PLAYER_STATE {
+	STAND,
+	WALK,
+	ENTER,
+	WIN
+}
+
+enum FACING {
+	LEFT,
+	RIGHT
 }
