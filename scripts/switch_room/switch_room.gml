@@ -13,6 +13,7 @@ if (_len == 0) {
 	return open_leaf_node(_room_map[? "value"]);
 }
 
+// Set up doors
 instance_deactivate_object(obj_door);
 if (_room_map[? "parent"] != -1) {
 	instance_activate_object(parent_door);
@@ -30,4 +31,14 @@ if (_to_parent) {
 	cur_address = string_delete(cur_address, string_length(cur_address), 1);
 } else {
 	cur_address += string(_room_map[? "value"]);
+}
+
+// Set up hints
+if (_room_map[? "hasHint"]) {
+	instance_activate_object(hint_guy);
+	hint_guy.room_index = _room_map;
+	hint_guy.gave_hint = _room_map[? "gaveHint"];
+	hint_guy.display = hint_guy.gave_hint ? _room_map[? "theHint"] : "?";
+} else {
+	instance_deactivate_object(hint_guy);
 }
