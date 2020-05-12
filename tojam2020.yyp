@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "6a6c1f5f-134f-42f9-8217-8be8262cb26b",
+            "Value": {
+                "id": "a454e806-ae7d-4fda-a2ec-e28ab9d949d0",
+                "resourcePath": "sprites\\spr_door_circle\\spr_door_circle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6defb4ae-3590-4b1b-b40a-031a7687766c",
             "Value": {
                 "id": "6af47acb-e3a7-4c74-9394-75578cff9008",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "c472975d-8ce9-48de-ae19-e53d78051af9",
+            "Value": {
+                "id": "f1a2ac2f-a2f6-46c7-baa5-1a215ded145e",
+                "resourcePath": "sprites\\spr_door_square\\spr_door_square.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c78b9ed4-d57e-406d-98b2-3cb467cd1d99",
             "Value": {
                 "id": "a6172356-4ab5-443d-aa67-24250279a49a",
@@ -415,11 +431,27 @@
             }
         },
         {
+            "Key": "ca086d23-c77d-45da-ac7c-c83bcd1ea17b",
+            "Value": {
+                "id": "c72c997e-3d06-4a15-a084-14ef8b714389",
+                "resourcePath": "sprites\\spr_door_star\\spr_door_star.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "e1d42e23-39b5-4d5a-ab5f-d5a8864b7367",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf6881f2-d6aa-463c-82d0-a5d8552c42d6",
+            "Value": {
+                "id": "f0a28df8-568d-44ff-bc9a-d867917e99f5",
+                "resourcePath": "sprites\\spr_mailbox\\spr_mailbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -439,11 +471,27 @@
             }
         },
         {
+            "Key": "d6f7f45a-0653-4aa3-8db1-9adfe7d716ad",
+            "Value": {
+                "id": "8222f2c5-3dbd-45c6-993f-7fe262555c99",
+                "resourcePath": "sprites\\spr_door_triangle\\spr_door_triangle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e16a312c-bd27-4dc5-bcf1-49604a7d6c65",
             "Value": {
                 "id": "aece066d-957b-4b5f-b0d7-de915491a704",
                 "resourcePath": "sprites\\spr_symbols\\spr_symbols.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e276ec99-c039-407d-b566-ec2b7d7b71bf",
+            "Value": {
+                "id": "03fff616-89d4-476e-a8a1-da4067a8c4ec",
+                "resourcePath": "views\\e276ec99-c039-407d-b566-ec2b7d7b71bf.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

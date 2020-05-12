@@ -12,7 +12,11 @@ var _len = array_length_1d(_current_doors);
 if (_len == 0) return;
 
 // Set up doors
-with (obj_door) active = false;
+with (obj_door) {
+	active = false;
+	image_index = 0;
+	image_speed = 0;
+}
 instance_deactivate_object(obj_door);
 
 if (_room_map[? "parent"] != -1) {
@@ -29,7 +33,7 @@ for (var i=0; i<_len; i++) {
 	door_pool[i].active = true;
 	door_pool[i].room_index = _current_doors[i];
 	door_pool[i].value = door_pool[i].room_index[? "value"];
-	door_pool[i].image_index = !ds_map_exists(door_pool[i].room_index, "children") ? 1 : 0;
+	door_pool[i].state = !ds_map_exists(door_pool[i].room_index, "children") ? 1 : 0;
 }
 
 if (_to_parent) {

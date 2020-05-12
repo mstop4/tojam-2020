@@ -6,6 +6,7 @@ if (!input_locked) {
 	else if (door_target != noone) {
 		input_locked = true;
 		state = PLAYER_STATE.ENTER;
+		door_target.image_speed = 1;
 		
 		var _current_doors = get_door_values(door_target.room_index);
 		var _len = array_length_1d(_current_doors);
