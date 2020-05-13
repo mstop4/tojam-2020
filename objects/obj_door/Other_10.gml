@@ -1,1 +1,1 @@
-with (obj_tree) switch_room(other.room_index, other.is_parent_door);
+with (obj_tree) switch_room(other.room_index, other.state);

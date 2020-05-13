@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "009c706f-ba75-45fa-9f3f-2b7c11827aa0",
+            "Value": {
+                "id": "a94a5142-e006-4a3e-bd57-5c6501970997",
+                "resourcePath": "sprites\\spr_mailbox_triangle\\spr_mailbox_triangle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02c95a65-ded3-457c-8b69-5487af987adc",
             "Value": {
                 "id": "756c9d57-940e-4d98-928d-d994b8e32790",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "a9774a4b-3deb-46fe-ad8a-caaf640c822a",
+            "Value": {
+                "id": "ecd4de56-fd1f-47f1-a078-8c730536722d",
+                "resourcePath": "sprites\\spr_mailbox_circle\\spr_mailbox_circle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b0485bbf-6afa-4e21-9abe-ced8abed5655",
             "Value": {
                 "id": "395bbea5-ff61-4194-8306-04e49675b4a7",
@@ -420,6 +436,14 @@
                 "id": "a6172356-4ab5-443d-aa67-24250279a49a",
                 "resourcePath": "scripts\/init_enums\/init_enums.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c7f14144-259e-4286-8738-de2e2ea7526f",
+            "Value": {
+                "id": "253427a4-ce81-436a-9429-f134450731c5",
+                "resourcePath": "sprites\\spr_mailbox_square\\spr_mailbox_square.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -547,6 +571,22 @@
             "Value": {
                 "id": "035e16ed-e10c-48cd-b453-3e789d872716",
                 "resourcePath": "views\/f7240fe1-7452-453f-9d3c-fb8a2329120a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f7e2261e-9015-4ff0-9cbf-8316bd68fc5c",
+            "Value": {
+                "id": "928a0828-aa2b-4fd3-ad56-533f7c4ed6fc",
+                "resourcePath": "sprites\\spr_mailbox_star\\spr_mailbox_star.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe164261-3a0a-4c0c-ba4b-01dcb788099e",
+            "Value": {
+                "id": "887f82c3-6f9e-402d-af86-5a02fe771287",
+                "resourcePath": "views\\fe164261-3a0a-4c0c-ba4b-01dcb788099e.yy",
                 "resourceType": "GMFolder"
             }
         }

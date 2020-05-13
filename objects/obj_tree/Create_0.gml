@@ -30,10 +30,9 @@ for (var i=0; i<MAX_CHILDREN; i++) {
 }
 
 parent_door = instance_create_layer(room_width/2, 216, "Parent", obj_door);
-parent_door.state = 2;
+parent_door.state = DOOR_TYPE.PARENT_DOOR;
 parent_door.image_alpha = 0.25;
 parent_door.value = 0;
-parent_door.is_parent_door = true;
 
 ds_list_destroy(node_list);
 

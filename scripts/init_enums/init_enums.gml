@@ -21,3 +21,9 @@ enum FACING {
 	LEFT,
 	RIGHT
 }
+
+enum DOOR_TYPE {
+	DOOR,
+	MAILBOX,
+	PARENT_DOOR
+}

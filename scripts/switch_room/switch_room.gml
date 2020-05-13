@@ -1,7 +1,7 @@
 //@arg room_map
-//@arg to_parent
+//@arg door_state
 var _room_map = argument[0];
-var _to_parent = argument[1];
+var _door_state = argument[1];
 
 if (!ds_exists(_room_map, ds_type_map)) return;
 
@@ -33,10 +33,10 @@ for (var i=0; i<_len; i++) {
 	door_pool[i].active = true;
 	door_pool[i].room_index = _current_doors[i];
 	door_pool[i].value = door_pool[i].room_index[? "value"];
-	door_pool[i].state = !ds_map_exists(door_pool[i].room_index, "children") ? 1 : 0;
+	door_pool[i].state = !ds_map_exists(door_pool[i].room_index, "children") ? DOOR_TYPE.MAILBOX : DOOR_TYPE.DOOR;
 }
 
-if (_to_parent) {
+if (_door_state == DOOR_TYPE.PARENT_DOOR) {
 	cur_address = string_delete(cur_address, string_length(cur_address), 1);
 } else {
 	cur_address += string(_room_map[? "value"]);

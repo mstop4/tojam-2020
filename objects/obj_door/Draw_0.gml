@@ -1,9 +1,7 @@
 draw_self();
 
-if (!is_parent_door) {
-	if (state == 0) {
-		draw_sprite(door_symbol_list[value-1],image_index,x,y);
-	} else {
-		draw_sprite(spr_symbols,value,x,y-16);
-	}
+if (state == DOOR_TYPE.DOOR) {
+	draw_sprite(door_symbol_list[value-1],image_index,x,y);
+} else if (state == DOOR_TYPE.MAILBOX) {
+	draw_sprite(mailbox_symbol_list[value-1],image_index,x,y);
 }
