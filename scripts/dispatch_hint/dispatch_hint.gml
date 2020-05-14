@@ -18,11 +18,4 @@ with (obj_level) {
 	if (hint_index >= ds_list_size(hint_list)) {
 		hint_index = 0;
 	}
-	
-	// Update hint guy if it is in the same room as the revealed hint
-	if (hint_guy.room_index == _room_map) {
-			hint_guy.status = HINT_STATUS.PENDING;
-			hint_guy.display = "!";
-			hint_guy.image_index = 1;
-	}
 }

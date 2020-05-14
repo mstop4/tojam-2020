@@ -54,16 +54,17 @@ if (_room_map[? "hasHint"]) {
 	
 	switch (hint_guy.status) {
 		case HINT_STATUS.NOT_GIVEN:
-			hint_guy.display = "?";
-			hint_guy.image_index = 0;
+			hint_guy.timeline_index = tmln_hint_idle;
+			hint_guy.timeline_position = 0;
+			hint_guy.timeline_running = true;
 			break;
 		case HINT_STATUS.PENDING:
-			hint_guy.display = "!";
-			hint_guy.image_index = 1;
+			hint_guy.image_index = 0;
+			hint_guy.timeline_running = false;
 			break;
 		case HINT_STATUS.GIVEN:
-			hint_guy.display = _room_map[? "theHint"];
-			hint_guy.image_index = 1;
+			hint_guy.image_index = 0;
+			hint_guy.timeline_running = false;
 			break;
 	}
 
