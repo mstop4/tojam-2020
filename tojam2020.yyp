@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "c3169345-8544-4aa0-bb57-8ae8242367ac",
+            "Value": {
+                "id": "316dbef7-3ea1-4d61-b122-3270d019f1f1",
+                "resourcePath": "sprites\\spr_hint_shutdown\\spr_hint_shutdown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c472975d-8ce9-48de-ae19-e53d78051af9",
             "Value": {
                 "id": "f1a2ac2f-a2f6-46c7-baa5-1a215ded145e",

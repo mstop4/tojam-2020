@@ -63,8 +63,9 @@ if (_room_map[? "hasHint"]) {
 			hint_guy.timeline_running = false;
 			break;
 		case HINT_STATUS.GIVEN:
-			hint_guy.image_index = 0;
-			hint_guy.timeline_running = false;
+			hint_guy.timeline_index = tmln_hint_idle;
+			hint_guy.timeline_position = 0;
+			hint_guy.timeline_running = true;
 			break;
 	}
 

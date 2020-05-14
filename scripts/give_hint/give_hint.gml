@@ -14,8 +14,7 @@ with (obj_level) {
 
 	// Update hint guy if it is in the same room as the revealed hint
 	if (hint_guy.room_index == _room_map) {
-			hint_guy.status = HINT_STATUS.GIVEN;
-			hint_guy.display = _room_map[? "theHint"];
-			hint_guy.image_index = 1;
+			hint_guy.status = HINT_STATUS.SHUTDOWN;
+			hint_guy.image_index = 0;
 	}
 }
