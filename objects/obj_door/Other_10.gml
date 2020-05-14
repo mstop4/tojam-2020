@@ -1,1 +1,1 @@
-with (obj_tree) switch_room(other.room_index, other.state);
+with (obj_level) switch_room(other.room_index, other.state);

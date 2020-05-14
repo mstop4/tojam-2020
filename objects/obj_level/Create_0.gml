@@ -12,6 +12,7 @@ display_set_gui_maximise(4,4);
 
 node_list = ds_list_create();
 tree = build_level();
+prompt_layer = layer_get_id("Prompts");
 
 cur_address = "";
 solution_address = build_solution(tree);
@@ -33,6 +34,7 @@ parent_door = instance_create_layer(room_width/2, 216, "Parent", obj_door);
 parent_door.state = DOOR_TYPE.PARENT_DOOR;
 parent_door.image_alpha = 0.25;
 parent_door.value = 0;
+door_x_stack = ds_stack_create();
 
 ds_list_destroy(node_list);
 

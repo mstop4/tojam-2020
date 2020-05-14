@@ -3,7 +3,7 @@
 var _room_map = argument[0];
 var _hint_index = argument[1];
 
-with (obj_tree) {
+with (obj_level) {
 	_room_map[? "hintStatus"] = HINT_STATUS.GIVEN;
 	_room_map[? "theHint"] = hint_list[| _hint_index];
 

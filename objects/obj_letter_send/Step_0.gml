@@ -1,1 +1,1 @@
-image_alpha = alarm[0] / lifespan;
+//image_alpha = alarm[0] / lifespan;

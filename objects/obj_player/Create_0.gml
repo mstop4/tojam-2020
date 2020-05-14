@@ -8,6 +8,11 @@ state = PLAYER_STATE.STAND;
 
 y = 128;
 
+// Prompts
+// up_prompt = instance_create_layer(-100, 32, "Prompts", obj_prompt);
+// down_prompt = instance_create_layer(-100, 128, "Prompts", obj_prompt);
+// down_prompt.image_index = 1;
+
 sprite_list[PLAYER_STATE.STAND, FACING.LEFT] = spr_player_stand_l;
 sprite_list[PLAYER_STATE.STAND, FACING.RIGHT] = spr_player_stand_r;
 sprite_list[PLAYER_STATE.WALK, FACING.LEFT] = spr_player_walk_l;

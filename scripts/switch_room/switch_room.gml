@@ -23,6 +23,9 @@ if (_room_map[? "parent"] != -1) {
 	parent_door.active = true;
 	instance_activate_object(parent_door);
 	parent_door.room_index = _room_map[? "parent"];
+	layer_set_visible(prompt_layer, false);
+} else {
+	layer_set_visible(prompt_layer, true);
 }
 
 var _x_pos = get_door_spacing(_len, 32, 16);
